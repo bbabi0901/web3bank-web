@@ -3,9 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
+    "local:start": "NEXT_PUBLIC_ENV=local next dev -p 3001",
+    "local:build": "NEXT_PUBLIC_ENV=local next build",
+    "dev:build": "NEXT_PUBLIC_ENV=development next build",
+    "prod:start": "NEXT_PUBLIC_ENV=production next start",
+    "prod:build": "NEXT_PUBLIC_ENV=production next build",
     "lint": "next lint"
   },
   "dependencies": {
